@@ -1,0 +1,10 @@
+<form action="/comment" method="post">
+  <input type="hidden" name="post_id" value="<%= @post.id %>">
+  <label for="author">Name:</label>
+  <input type="text" name="author" id="author" required>
+  <label for="email">Email:</label>
+  <input type="email" name="email" id="email" required>
+  <label for="content">Comment:</label>
+  <textarea name="content" id="content" rows="5" required></textarea>
+  <input type="submit" value="Submit">
+</form>
