@@ -16,7 +16,22 @@
             </div>
         </main>
     </div>
-
+<h2>Learning platform</h2>
+<h3>JavaScript comment box example</h3>
+<form id="myForm">
+Full name: <input id="userName" type="text" name="fname">
+<br><br>
+Email : <input id="userEmail" type="text" name="email">
+<input type="button" onclick="myFunction()" value="Submit">
+</form>
+<h5>Submitted data :</h5>
+<p id="data"></p>
+<script>
+function myFunction(){
+let email = document.getElementById("userEmail").value
+let comment = document.getElementById("userComment").value
+}
+</script>
     <footer class="wrapper-footer">
         {% include comment-form.html %}
         {% include footer.html %}
